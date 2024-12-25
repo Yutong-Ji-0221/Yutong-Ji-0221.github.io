@@ -1,42 +1,89 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background: linear-gradient(120deg, #f6f9fc, #e9f5fb);
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #0078d7;
+  background: #0078d7;
   color: white;
-  padding: 10px 20px;
   text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
 }
 
 nav {
-  background-color: #005a9e;
-  padding: 10px 20px;
-  text-align: center;
+  background: #005a9e;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #ffd700;
 }
 
 main {
+  max-width: 900px;
+  margin: 20px auto;
   padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  font-size: 2rem;
+  color: #0078d7;
+  margin-bottom: 10px;
+}
+
+main p, main ul {
+  font-size: 1.1rem;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
 }
 
 footer {
-  background-color: #0078d7;
-  color: white;
   text-align: center;
   padding: 10px 0;
+  background: #0078d7;
+  color: white;
   margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
 }
